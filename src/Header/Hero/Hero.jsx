@@ -28,13 +28,13 @@ const Hero = () => {
         Access premium AI tools, design assets, templates, and productivity software—all in one place. Start creating faster today.
       </p>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex justify-center md:justify-start flex-wrap gap-4 ">
 
-        <button className="btn bg-[#7C3AED] hover:bg-[#6D28D9] border-none text-white px-8 rounded-full normal-case">
-          Explore Products
-        </button>
+       <button className="btn transition-all duration-1000 bg-linear-to-r from-[#4F39F6] to-[#9514FA] hover:from-[#9514FA] hover:to-[#4F39F6] border-none text-white px-8 rounded-full normal-case">
+  Explore Products
+</button>
 
-        <button className="btn btn-outline border-purple-200 text-[#7C3AED] hover:bg-purple-50 hover:border-purple-300 px-8 rounded-full normal-case flex gap-2">
+        <button className="btn btn-outline border-purple-200 text-[#7C3AED] hover:bg-[#7C3AED] hover:text-white duration-700 px-8 rounded-full normal-case flex gap-2">
 
          <Play size="20"></Play>
 

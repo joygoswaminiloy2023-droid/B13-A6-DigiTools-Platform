@@ -1,8 +1,7 @@
 @import "tailwindcss";
 @plugin "daisyui";
 *{
-  background-color: #ffffff;
-  color: black;
+
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
 

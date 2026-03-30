@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "name": "Starter Plan",
+    "description": "Perfect for beginners who want to explore basic features.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Basic templates",
+      "Limited exports",
+      "Community support"
+    ],
+    "icon": "../src/assets/products/operation.png"
+  },
+  {
+    "id": 2,
+    "name": "Pro Resume Builder",
+    "description": "Advanced tools for creating professional resumes.",
+    "price": 9.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF",
+      "Cover letter builder"
+    ],
+    "icon": "../src/assets/products/design-tool.png"
+  },
+  {
+    "id": 3,
+    "name": "Business Suite",
+    "description": "Complete package for business professionals and teams.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "Team collaboration",
+      "Advanced analytics",
+      "Priority support",
+      "Unlimited exports"
+    ],
+    "icon": "../src/assets/products/Group 7.png"
+  },
+  {
+    "id": 4,
+    "name": "Annual Pro Plan",
+    "description": "Save more with yearly subscription for professionals.",
+    "price": 99.99,
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "All Pro features",
+      "Yearly savings",
+      "Premium templates",
+      "AI suggestions"
+    ],
+    "icon": "../src/assets/products/portfolio.png"
+  },
+  {
+    "id": 5,
+    "name": "Enterprise Plan",
+    "description": "Custom solutions for large organizations.",
+    "price": 199.99,
+    "period": "yearly",
+    "tag": "Best seller",
+    "tagType": "best seller",
+    "features": [
+      "Dedicated account manager",
+      "Custom integrations",
+      "Team training",
+      "Unlimited access"
+    ],
+    "icon": "../src/assets/products/writing_2327400 1.png"
+  },
+  {
+    "id": 6,
+    "name": "Freelancer Boost",
+    "description": "Designed for freelancers to grow and manage clients efficiently.",
+    "price": 14.99,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Client management tools",
+      "Invoice generator",
+      "Portfolio builder",
+      "Priority email support"
+    ],
+    "icon": "../src/assets/products/social-media.png"
+  }
+]

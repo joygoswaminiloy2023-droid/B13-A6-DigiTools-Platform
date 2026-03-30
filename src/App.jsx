@@ -1,15 +1,22 @@
 
-import { Suspense } from 'react'
+import { Suspense, useState } from 'react'
 import './App.css'
 import Hero from './Header/Hero/Hero'
 import Nav from './Header/navbar/Nav'
 import Count from './Main/Counter/count'
+import Premiumtools from './Main/Premiumtools/Premiumtools'
+import Cart from './Main/Premiumtools/Cart/Cart'
 
 
 function App() {
  
   const count=fetch('counter.json').then(res=>res.json())
-  console.log(count)
+  
+
+  const premiumtools=fetch('premiumtools.json').then(res=>res.json())
+  console.log(premiumtools)
+
+  const [toggle,setToggle]=useState("products");
 
 
   return (
@@ -19,8 +26,32 @@ function App() {
 
 <Hero></Hero>
 {/* header end */}
-<Suspense fallback={<span className="loading loading-spinner text-primary"></span>}>
-  <Count count={count}></Count>
+
+
+{/* main start */}
+
+
+{/* counter */}
+<Suspense 
+  fallback={
+    <div className="flex h-64 w-full items-center justify-center">
+      <span className="loading loading-spinner loading-xl text-primary"></span>
+    </div>
+  }
+>
+  <Count count={count} />
+</Suspense>
+
+
+{/* premiumtools */}
+<Suspense 
+  fallback={
+    <div className="flex h-64 w-full items-center justify-center">
+      <span className="loading loading-spinner loading-xl text-primary"></span>
+    </div>
+  }
+><Premiumtools toggle={toggle} setToggle={setToggle} premiumtools={premiumtools}></Premiumtools>
+ 
 </Suspense>
 
  </>

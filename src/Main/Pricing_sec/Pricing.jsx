@@ -43,13 +43,13 @@ const Pricing = () => {
               </li>
             </ul>
 
-            <button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-4 rounded-2xl transition">
+            <button className="w-full bg-linear-to-br from-[#4F39F6]  to-[#9514FA]  hover:bg-purple-700 text-white font-medium py-4 rounded-2xl transition">
               Get Started Free
             </button>
           </div>
 
           {/* Pro Plan - Most Popular */}
-          <div className="bg-purple-600 text-white rounded-3xl p-8 relative shadow-2xl scale-105 border border-purple-400">
+          <div className="bg-linear-to-br from-[#4F39F6]  to-[#9514FA]  text-white rounded-3xl p-8 relative shadow-2xl scale-105 border border-purple-400">
             {/* Most Popular Badge */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-yellow-900 text-xs font-bold px-5 py-1 rounded-full">
               Most Popular
@@ -120,7 +120,7 @@ const Pricing = () => {
               </li>
             </ul>
 
-            <button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-4 rounded-2xl transition">
+            <button className="w-full bg-linear-to-br from-[#4F39F6]  to-[#9514FA]  hover:bg-purple-700 text-white font-medium py-4 rounded-2xl transition">
               Contact Sales
             </button>
           </div>

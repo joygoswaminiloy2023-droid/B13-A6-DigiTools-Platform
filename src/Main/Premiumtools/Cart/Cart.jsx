@@ -1,5 +1,6 @@
 import { ShoppingCart, Trash2 } from 'lucide-react';
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Cart = ({selectedplans,setSelectedplans}) => {
 const arr=selectedplans;
@@ -15,11 +16,14 @@ total = total.toFixed(2);
 const handledelete=(item)=>{
    const filterPlans=arr.filter((filterselected)=>filterselected.id !== item.id)
     setSelectedplans(filterPlans);
+    toast.error("Item Deleted")
 }
 
 const handlecheckout=()=>{
 
 setSelectedplans([]);
+selectedplans.length>0?
+toast("Thanks For Staying With Us, Happy Shopping!"):toast.error("Please Buy a plan")
 }
 
     return (

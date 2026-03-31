@@ -8,6 +8,7 @@ import Premiumtools from './Main/Premiumtools/Premiumtools'
 import Pricing from './Main/Pricing_sec/Pricing'
 import Footer from './Footer/footer'
 import Started from './Main/Strated/Started'
+import Readytransform from './Footer/Readytransform'
 
 
 
@@ -79,6 +80,11 @@ function App() {
 {toggle === "products" &&
 <Pricing></Pricing>
 }
+ {/* transform */}
+ {toggle==="products" &&
+<Readytransform></Readytransform>
+}
+
 
 {/* footer */}
 {toggle==="products" &&

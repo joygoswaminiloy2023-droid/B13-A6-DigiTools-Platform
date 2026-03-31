@@ -5,7 +5,12 @@ import Hero from './Header/Hero/Hero'
 import Nav from './Header/navbar/Nav'
 import Count from './Main/Counter/count'
 import Premiumtools from './Main/Premiumtools/Premiumtools'
-import Cart from './Main/Premiumtools/Cart/Cart'
+import Pricing from './Main/Pricing_sec/Pricing'
+import Footer from './Footer/footer'
+import Started from './Main/Strated/Started'
+
+
+
 
 
 function App() {
@@ -24,7 +29,9 @@ function App() {
 {/* header Start */}
 <Nav></Nav>
 
+
 <Hero></Hero>
+
 {/* header end */}
 
 
@@ -44,6 +51,7 @@ function App() {
 
 
 {/* premiumtools */}
+
 <Suspense 
   fallback={
     <div className="flex h-64 w-full items-center justify-center">
@@ -53,7 +61,14 @@ function App() {
 ><Premiumtools toggle={toggle} setToggle={setToggle} premiumtools={premiumtools}></Premiumtools>
  
 </Suspense>
+{/* getstarted */}
+<Started></Started>
 
+{/* pricing */}
+<Pricing></Pricing>
+
+{/* footer */}
+<Footer></Footer>
  </>
   )
 }

@@ -2,6 +2,8 @@ import React, { use } from 'react';
 import Tools_card from './Tools_card';
 import Cart from './Cart/Cart';
 
+
+
 const Premiumtools = ({toggle,setToggle,premiumtools}) => {
 
     const handle_toggle=(state)=>{
@@ -14,8 +16,8 @@ const Premiumtools = ({toggle,setToggle,premiumtools}) => {
         <div className='bg-white'>
             {/* heading */}
             <div className='my-10 text-center space-y-2'>
-<h1 className='text-5xl font-extrabold'>Premium Digital Tools</h1>
-<p className='text-[#627382] text-2xl'>Choose from our curated collection of premium digital products designed 
+<h1 className='text-4xl font-bold'>Premium Digital Tools</h1>
+<p className='text-[#627382] text-lg'>Choose from our curated collection of premium digital products designed 
     <br />to boost your productivity and creativity.</p>
             </div>
 {/* toggle */}
@@ -33,11 +35,10 @@ const Premiumtools = ({toggle,setToggle,premiumtools}) => {
 {premiumtools_data.map((tools_data,index)=><Tools_card key={index} tools_data={tools_data}></Tools_card>)}
 </div>):(<Cart></Cart>)}
             </div>
+            
 
-           
        
-);
-
+    );
 };
 
 export default Premiumtools;

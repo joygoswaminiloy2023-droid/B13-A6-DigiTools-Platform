@@ -5,7 +5,7 @@ import Cart from './Cart/Cart';
 
 
 const Premiumtools = ({toggle,setToggle,premiumtools,selectedplans,setSelectedplans}) => {
-  
+
 
     const handle_toggle=(state)=>{
         setToggle(state)

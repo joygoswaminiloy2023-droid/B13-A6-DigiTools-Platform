@@ -50,7 +50,7 @@ setSelectedplans([...selectedplans,tools_data])
   </div>
 
   {/* Action */}
-  <button onClick={()=>handleactive()}  disabled={active}  className={`w-full py-5 ${active===true?"bg-green-400":"bg-[#7C3AED]"}  text-white text-xl font-bold rounded-2xl transition-all`}>
+  <button onClick={()=>handleactive()}  disabled={active} className={`w-full py-5 ${active===true?"bg-green-400":"bg-[#7C3AED]"}  text-white text-xl font-bold rounded-2xl transition-all`}>
     {active===true?"Purchased":"Buy Now"}
   </button>
 </div>

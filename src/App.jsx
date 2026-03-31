@@ -25,6 +25,7 @@ function App() {
   const [toggle,setToggle]=useState("products");
 
     const [selectedplans,setSelectedplans]=useState([])
+    const [active,setActive]=useState(false);
 
   return (
  <>
@@ -67,7 +68,7 @@ function App() {
       <span className="loading loading-spinner loading-xl text-primary"></span>
     </div>
   }
-><Premiumtools toggle={toggle} setToggle={setToggle} premiumtools={premiumtools} selectedplans={selectedplans} setSelectedplans={setSelectedplans}></Premiumtools>
+><Premiumtools toggle={toggle} active={active} setActive={setActive} setToggle={setToggle} premiumtools={premiumtools} selectedplans={selectedplans} setSelectedplans={setSelectedplans}></Premiumtools>
  
 </Suspense>
 {/* getstarted */}

@@ -1,7 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import tick from '../../assets/vector.png'
+import { toast } from 'react-toastify';
 
-const Tools_card = ({tools_data}) => {
+const Tools_card = ({tools_data,selectedplans,setSelectedplans}) => {
+const [active,setActive]=useState(false);
+
+const handleactive=()=>{
+  toast.success("Purchased Successful");
+setActive(true);
+setSelectedplans([...selectedplans,tools_data])
+
+
+}
+
     return (
     <div className="max-w-lg bg-white border border-gray-100 rounded-2xl p-10 relative shadow-2xl">
   {/* Badge */}
@@ -39,8 +50,8 @@ const Tools_card = ({tools_data}) => {
   </div>
 
   {/* Action */}
-  <button className="w-full py-5 bg-[#7C3AED] hover:bg-[#6D28D9] text-white text-xl font-bold rounded-2xl transition-all">
-    Buy Now
+  <button onClick={()=>handleactive()}  disabled={active}  className={`w-full py-5 ${active===true?"bg-green-400":"bg-[#7C3AED]"}  text-white text-xl font-bold rounded-2xl transition-all`}>
+    {active===true?"Purchased":"Buy Now"}
   </button>
 </div>
     );

@@ -4,7 +4,7 @@ import { ShoppingCart } from 'lucide-react';
 
 
 
-const Nav = () => {
+const Nav = ({selectedplans}) => {
     return (
  <div className="bg-base-100 shadow-sm">
   <div className="navbar max-w-7xl mx-auto px-4">
@@ -36,16 +36,28 @@ const Nav = () => {
         <li><a>Pricing</a></li>
         <li><a>Testimonials</a></li>
         <li><a>FAQ</a></li>
+        <li><a>Login</a></li>
       </ul>
     </div>
 
-    <div className="navbar-end gap-4">
-      <ShoppingCart size={20} />
-      <a >Login</a>
-     <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-5 rounded-2xl">
-  Get Started
-</a>
-    </div>
+ <div className="navbar-end gap-4">
+  
+  <div className="relative">
+    <ShoppingCart size={20} />
+
+    
+      <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+        {selectedplans.length}
+      </span>
+    
+  </div>
+
+  <a className="hidden md:block">Login</a>
+
+  <a className="btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white p-5 rounded-2xl">
+    Get Started
+  </a>
+</div>
 
   </div>
 </div>

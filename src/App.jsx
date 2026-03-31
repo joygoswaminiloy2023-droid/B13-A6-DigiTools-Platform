@@ -23,14 +23,19 @@ function App() {
 
   const [toggle,setToggle]=useState("products");
 
+    const [selectedplans,setSelectedplans]=useState([])
 
   return (
  <>
 {/* header Start */}
-<Nav></Nav>
+<Nav selectedplans={selectedplans}></Nav>
 
 
+
+{toggle === "products" &&
 <Hero></Hero>
+}
+
 
 {/* header end */}
 
@@ -39,6 +44,8 @@ function App() {
 
 
 {/* counter */}
+
+{toggle === "products" &&
 <Suspense 
   fallback={
     <div className="flex h-64 w-full items-center justify-center">
@@ -48,6 +55,7 @@ function App() {
 >
   <Count count={count} />
 </Suspense>
+}
 
 
 {/* premiumtools */}
@@ -58,18 +66,26 @@ function App() {
       <span className="loading loading-spinner loading-xl text-primary"></span>
     </div>
   }
-><Premiumtools toggle={toggle} setToggle={setToggle} premiumtools={premiumtools}></Premiumtools>
+><Premiumtools toggle={toggle} setToggle={setToggle} premiumtools={premiumtools} selectedplans={selectedplans} setSelectedplans={setSelectedplans}></Premiumtools>
  
 </Suspense>
 {/* getstarted */}
+
+{toggle === "products" &&
 <Started></Started>
+}
 
 {/* pricing */}
+{toggle === "products" &&
 <Pricing></Pricing>
+}
 
 {/* footer */}
+{toggle==="products" &&
 <Footer></Footer>
+}
  </>
+
   )
 }
 

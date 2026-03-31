@@ -12,7 +12,7 @@
       "Limited exports",
       "Community support"
     ],
-    "icon": "../src/assets/products/operation.png"
+    "icon": "/products/operation.png"
   },
   {
     "id": 2,
@@ -28,7 +28,7 @@
       "Export to PDF",
       "Cover letter builder"
     ],
-    "icon": "../src/assets/products/design-tool.png"
+    "icon": "/products/design-tool.png"
   },
   {
     "id": 3,
@@ -44,7 +44,7 @@
       "Priority support",
       "Unlimited exports"
     ],
-    "icon": "../src/assets/products/Group 7.png"
+    "icon": "/products/Group 7.png"
   },
   {
     "id": 4,
@@ -60,7 +60,7 @@
       "Premium templates",
       "AI suggestions"
     ],
-    "icon": "../src/assets/products/portfolio.png"
+    "icon": "/products/portfolio.png"
   },
   {
     "id": 5,
@@ -76,7 +76,7 @@
       "Team training",
       "Unlimited access"
     ],
-    "icon": "../src/assets/products/writing_2327400 1.png"
+    "icon": "/products/writing_2327400 1.png"
   },
   {
     "id": 6,
@@ -92,6 +92,6 @@
       "Portfolio builder",
       "Priority email support"
     ],
-    "icon": "../src/assets/products/social-media.png"
+    "icon": "/products/social-media.png"
   }
 ]
